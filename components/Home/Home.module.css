@@ -1,0 +1,39 @@
+.expbtn {
+  position: fixed;
+  right: 30px;
+  top: 50px;
+  padding: 1rem;
+  border: none;
+  border-radius: 70px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.expbtn:hover {
+  transform: translateY(-3px);
+  background-color: #694ca3;
+}
+
+.expbtn:hover svg {
+  color: #fff;
+}
+
+.expbtn svg {
+  font-size: 1.8rem;
+  color: #8665c7;
+  transition: all 0.2s ease-in;
+  animation: jumping 0.5s infinite ease-in;
+}
+
+@keyframes jumping {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=Home.module.css.map */
