@@ -49,7 +49,7 @@ const ResumeEditor = () => {
     const RenderEducationListUI = () => {
         let myArr = Array(educationListNumber).fill(0)
         return myArr.map((el, idx) => {
-            return <HoverBox key={idx} style={{ padding: '1rem 0' }} value={skillListNumber} onClick={setSkillListNumber} >
+            return <HoverBox key={idx} style={{ padding: '1rem 0' }} value={educationListNumber} onClick={setEducationListNumber} >
                 <Editable placeholder='BSc. Computer Science, Harvard' type='textarea' className={`${classes.personalInfo}`} />
                 <Editable placeholder='2010 - 2014' type='input' className={`${classes.personalInfo} `} />
             </HoverBox >
@@ -89,7 +89,7 @@ const ResumeEditor = () => {
                 </div>
                 <div className={`${classes.section} ${classes.personalInfoHeading}`}>
                     <Editable placeholder='Work Experience' type='input' />
-                    <Editable placeholder='I am a full-stack developer...' type='textarea' className={`${classes.personalInfo} ${classes.space2}`} />
+                    <Editable placeholder='I worked at ...' type='textarea' className={`${classes.personalInfo} ${classes.space2}`} />
                 </div>
                 {RenderWorkExperienceLayoutUI()}
 
